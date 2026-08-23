@@ -1,139 +1,1016 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="generator" content="MechaVerse">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image:src" content="">
-    <meta property="og:image" content="">
-    <meta name="twitter:title" content="Page 2">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <meta name="description"
+        content="Latest announcements and updates from MechaVerse, Department of Mechanical Engineering, Tezpur University.">
+
+    <title>Announcements | MechaVerse</title>
+
+
+    <!-- =====================================================
+         FAVICON
+         ===================================================== -->
+
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <meta name="description" content="">
 
 
-    <title>Announcement</title>
+    <!-- =====================================================
+         BOOTSTRAP
+         ===================================================== -->
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+
+
+    <!-- =====================================================
+         OTHER STYLES
+         ===================================================== -->
+
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
+
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
+
     <link rel="stylesheet" href="assets/theme/css/style.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+         ===================================================== -->
+
     <link rel="preload"
         href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
     <noscript>
+
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+
     </noscript>
+
+
+    <!-- =====================================================
+         MOBIRISE CSS
+         ===================================================== -->
+
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
 
+    <!-- =====================================================
+         CUSTOM ANNOUNCEMENT STYLES
+         ===================================================== -->
 
+    <style>
+        /* =================================================
+           MAIN PAGE
+           ================================================= */
+
+        .announcement-section {
+
+            padding: 110px 20px 100px;
+
+            background:
+                linear-gradient(135deg,
+                    #f7f7f4 0%,
+                    #ffffff 50%,
+                    #f2f2ee 100%);
+
+            min-height: 75vh;
+
+        }
+
+
+        /* =================================================
+           PAGE HEADER
+           ================================================= */
+
+        .announcement-header {
+
+            text-align: center;
+
+            margin-bottom: 55px;
+
+        }
+
+
+        .announcement-eyebrow {
+
+            margin-bottom: 8px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            color: #666;
+
+        }
+
+
+        .announcement-title {
+
+            margin: 0;
+
+            font-size: 58px;
+
+            line-height: 1.1;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            color: #222;
+
+        }
+
+
+        .announcement-subtitle {
+
+            margin-top: 12px;
+
+            font-size: 18px;
+
+            color: #777;
+
+        }
+
+
+        /* =================================================
+           ANNOUNCEMENT CONTAINER
+           ================================================= */
+
+        .announcement-container {
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+
+        }
+
+
+        /* =================================================
+           ANNOUNCEMENT CARD
+           ================================================= */
+
+        .announcement-card {
+
+            position: relative;
+
+            display: grid;
+
+            grid-template-columns: 1fr;
+
+            background: #ffffff;
+
+            border-radius: 20px;
+
+            padding: 45px 50px;
+
+            margin-bottom: 30px;
+
+            box-shadow:
+                0 15px 45px rgba(0, 0, 0, 0.09);
+
+            border: 1px solid #eeeeea;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+
+        .announcement-card:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 20px 55px rgba(0, 0, 0, 0.13);
+
+        }
+
+
+        /* =================================================
+           LATEST BADGE
+           ================================================= */
+
+        .announcement-badge {
+
+            display: inline-block;
+
+            width: fit-content;
+
+            padding: 7px 15px;
+
+            margin-bottom: 20px;
+
+            border-radius: 50px;
+
+            background: #eeeeea;
+
+            color: #333;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        /* =================================================
+           DATE
+           ================================================= */
+
+        .announcement-date {
+
+            margin-bottom: 8px;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            color: #999;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =================================================
+           TITLE
+           ================================================= */
+
+        .announcement-card-title {
+
+            margin: 0 0 15px;
+
+            font-size: 30px;
+
+            line-height: 1.3;
+
+            font-weight: 700;
+
+            color: #222;
+
+        }
+
+
+        /* =================================================
+           DESCRIPTION
+           ================================================= */
+
+        .announcement-description {
+
+            margin-bottom: 25px;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            color: #666;
+
+        }
+
+
+        /* =================================================
+           EVENT DETAILS
+           ================================================= */
+
+        .announcement-details {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 15px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .announcement-detail {
+
+            padding: 18px;
+
+            border-radius: 12px;
+
+            background: #f7f7f4;
+
+        }
+
+
+        .announcement-detail span {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            color: #999;
+
+        }
+
+
+        .announcement-detail strong {
+
+            display: block;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            color: #222;
+
+        }
+
+
+        /* =================================================
+           BUTTONS
+           ================================================= */
+
+        .announcement-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+        }
+
+
+        .announcement-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding: 13px 22px;
+
+            border-radius: 8px;
+
+            background: #222;
+
+            color: #ffffff !important;
+
+            text-decoration: none !important;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            transition:
+                background 0.3s ease,
+                transform 0.3s ease;
+
+        }
+
+
+        .announcement-button:hover {
+
+            background: #444;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        .announcement-button.secondary {
+
+            background: #eeeeea;
+
+            color: #222 !important;
+
+        }
+
+
+        .announcement-button.secondary:hover {
+
+            background: #ddddda;
+
+        }
+
+
+        /* =================================================
+           EMPTY / OLD ANNOUNCEMENT
+           ================================================= */
+
+        .old-announcement {
+
+            background: #ffffff;
+
+            border-radius: 20px;
+
+            padding: 35px 40px;
+
+            border: 1px solid #eeeeea;
+
+        }
+
+
+        .old-announcement-title {
+
+            margin: 0 0 10px;
+
+            font-size: 22px;
+
+            font-weight: 700;
+
+            color: #333;
+
+        }
+
+
+        .old-announcement-text {
+
+            margin: 0;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            color: #777;
+
+        }
+
+
+        /* =================================================
+           MOBILE
+           ================================================= */
+
+        @media (max-width: 768px) {
+
+            .announcement-section {
+
+                padding:
+                    80px 15px 70px;
+
+            }
+
+
+            .announcement-header {
+
+                margin-bottom: 40px;
+
+            }
+
+
+            .announcement-eyebrow {
+
+                font-size: 11px;
+
+                letter-spacing: 3px;
+
+            }
+
+
+            .announcement-title {
+
+                font-size: 42px;
+
+            }
+
+
+            .announcement-subtitle {
+
+                font-size: 16px;
+
+            }
+
+
+            .announcement-card {
+
+                padding: 30px 25px;
+
+                border-radius: 17px;
+
+            }
+
+
+            .announcement-card-title {
+
+                font-size: 25px;
+
+            }
+
+
+            .announcement-description {
+
+                font-size: 14px;
+
+                line-height: 1.7;
+
+            }
+
+
+            .announcement-details {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .announcement-buttons {
+
+                flex-direction: column;
+
+            }
+
+
+            .announcement-button {
+
+                width: 100%;
+
+            }
+
+
+            .old-announcement {
+
+                padding: 28px 23px;
+
+            }
+
+        }
+
+
+        /* =================================================
+           SMALL MOBILE
+           ================================================= */
+
+        @media (max-width: 480px) {
+
+            .announcement-title {
+
+                font-size: 36px;
+
+            }
+
+
+            .announcement-card {
+
+                padding: 25px 20px;
+
+            }
+
+
+            .announcement-card-title {
+
+                font-size: 22px;
+
+            }
+
+        }
+    </style>
 
 </head>
 
+
 <body>
 
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
     <section data-bs-version="5.1" class="menu menu2 cid-tCWzqlFkcs" once="menu" id="menu2-a">
+
+
         <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+
+
             <div class="container">
+
+
+                <!-- MECHAVERSE LOGO -->
+
                 <div class="navbar-brand">
+
                     <span class="navbar-logo">
+
                         <a href="index.html">
+
                             <img src="assets/Logo/Mechaverse logo.jpg" alt="MechaVerse" style="height: 3rem;">
+
                         </a>
+
                     </span>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7"
-                            href="index.html">MechaVerse</a></span>
+
+
+                    <span class="navbar-caption-wrap">
+
+                        <a class="navbar-caption text-black display-7" href="index.html">
+
+                            MechaVerse
+
+                        </a>
+
+                    </span>
+
                 </div>
+
+
+                <!-- MOBILE MENU -->
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
                     data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+
                     <div class="hamburger">
+
                         <span></span>
+
                         <span></span>
+
                         <span></span>
+
                         <span></span>
+
                     </div>
+
                 </button>
+
+
+                <!-- NAVIGATION -->
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
                     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="Announcement.html">
-                               Announcement</a></li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="Coordinator.html"
-                                aria-expanded="false">People</a></li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4"
-                                href="activities.html">Activities</a>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="Announcement.html">
+
+                                Announcement
+
+                            </a>
+
                         </li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4"
-                                href="contactus.html">Contact us</a></li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="Coordinator.html">
+
+                                People
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="activities.html">
+
+                                Activities
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="contactus.html">
+
+                                Contact us
+
+                            </a>
+
+                        </li>
+
+
                     </ul>
+
+
+                    <!-- TEZPUR UNIVERSITY LOGO -->
+
                     <span class="navbar-logo">
+
                         <a href="http://www.tezu.ernet.in/">
-                            <img src="assets/Logo/TU LOGO.png" alt="MechaVerse" style="height: 3rem;">
+
+                            <img src="assets/Logo/TU LOGO.png" alt="Tezpur University" style="height: 3rem;">
+
                         </a>
+
                     </span>
+
+
                 </div>
+
             </div>
+
         </nav>
-        </section>
 
-        <section data-bs-version="5.1" class="header12 cid-tCWjFeaxfR mbr-parallax-background" id="header12-4">
-
+    </section>
 
 
 
-            <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(255, 255, 255);">
+    <!-- =====================================================
+         ANNOUNCEMENTS SECTION
+         ===================================================== -->
+
+    <section class="announcement-section">
+
+
+        <div class="container">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="announcement-header">
+
+
+                <p class="announcement-eyebrow">
+
+                    MECHAVERSE
+
+                </p>
+
+
+                <h1 class="announcement-title">
+
+                    Announcements
+
+                </h1>
+
+
+                <p class="announcement-subtitle">
+
+                    Stay updated with the latest news, events and
+                    opportunities from MechaVerse.
+
+                </p>
+
+
             </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="card col-12 col-md-12 col-lg-9">
-                        <div class="card-wrapper">
-                            <div class="card-box align-center">
-                                <h1 class="card-title mbr-fonts-style mb-3 display-1">
-                                    <bold>Announcements</bold>
-                                </h1>
-                                <p class="mbr-text mbr-fonts-style display-7">1.  A Hands-on training on Scientific Programming with OCTAVE
-                                    <br> <a href="https://drive.google.com/file/d/1tLhYi-CFRhd5ibIlSSQCaMNttNRGmSCK/view?usp=drivesdk" target="_blank "
-                                     class="contact">Download Pdf for more details</a>
-                            </div>
-                        </div>
+
+
+
+            <!-- ANNOUNCEMENTS -->
+
+            <div class="announcement-container">
+
+
+                <!-- =================================================
+                     MECHMINDS ANNOUNCEMENT
+                     ================================================= -->
+
+                <article class="announcement-card">
+
+
+                    <span class="announcement-badge">
+
+                        LATEST ANNOUNCEMENT
+
+                    </span>
+
+
+                    <div class="announcement-date">
+
+                        25 August 2026
+
                     </div>
-                </div>
+
+
+                    <h2 class="announcement-card-title">
+
+                        MECHMINDS: Mechanical Model Demonstration
+
+                    </h2>
+
+
+                    <p class="announcement-description">
+
+                        MechaVerse is organising a Mechanical Model
+                        Demonstration on
+                        <strong>25th August 2026</strong>.
+
+                        We invite students and enthusiasts to showcase
+                        their mechanical creations and share their ideas,
+                        creativity and engineering concepts with the
+                        MechaVerse community.
+
+                    </p>
+
+
+                    <p class="announcement-description">
+
+                        If you are interested in showcasing your mechanical
+                        model, please register using the form below.
+
+                        You are also welcome to attend the event if you are
+                        interested in seeing, understanding and learning
+                        about the models.
+
+                    </p>
+
+
+
+                    <!-- EVENT DETAILS -->
+
+                    <div class="announcement-details">
+
+
+                        <div class="announcement-detail">
+
+                            <span>
+                                DATE
+                            </span>
+
+                            <strong>
+                                25 August 2026
+                            </strong>
+
+                        </div>
+
+
+                        <div class="announcement-detail">
+
+                            <span>
+                                TIME
+                            </span>
+
+                            <strong>
+                                4:30 PM
+                            </strong>
+
+                        </div>
+
+
+                        <div class="announcement-detail">
+
+                            <span>
+                                VENUE
+                            </span>
+
+                            <strong>
+                                MELH II
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="announcement-buttons">
+
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoykyo-mKLj0y_moEycQ5pWwpQKNYbiPOpgkjlCII4sGteIw/viewform"
+                            target="_blank" rel="noopener noreferrer" class="announcement-button">
+
+                            Register to Showcase
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+                        <a href="activities.html" class="announcement-button secondary">
+
+                            View Activity
+
+                        </a>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =================================================
+                     GENERAL NOTICE
+                     ================================================= -->
+
+                <article class="old-announcement">
+
+
+                    <h3 class="old-announcement-title">
+
+                        Stay Tuned
+
+                    </h3>
+
+
+                    <p class="old-announcement-text">
+
+                        More announcements, workshops, activities and
+                        opportunities from MechaVerse will be posted here.
+                        Check this page regularly for the latest updates.
+
+                    </p>
+
+
+                </article>
+
+
             </div>
-        </section>
-    
-       
+
+        </div>
+
+    </section>
 
 
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
 
     <section data-bs-version="5.1" class="footer3 cid-tCWzxvGlwb footer1" once="footers" id="footer3-g">
 
         <div class="container">
+
             <div class="media-container-row align-center mbr-white">
-        
-                
+
                 <div class="row row-copirayt">
+
                     <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                        © Copyright 2023 MechaVerse. All Rights Reserved.
+                        © Copyright 2026 MechaVerse. All Rights Reserved.
                     </p>
+
                 </div>
-                <div>Developed by Aryan Kumar Singh </div>
+
+                <div>
+                    Managed by Siddhartha Sengupta
+                </div>
+
             </div>
+
         </div>
+
     </section>
-    
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/ytplayer/index.js"></script>
-    <script src="assets/mbr-tabs/mbr-tabs.js"></script>
-    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-    <!-- <script src="assets/theme/js/script.js"></script> -->
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <script src="assets/smoothscroll/smooth-scroll.js">
+    </script>
+
+
+    <script src="assets/ytplayer/index.js">
+    </script>
+
+
+    <script src="assets/mbr-tabs/mbr-tabs.js">
+    </script>
+
+
+    <script src="assets/dropdown/js/navbar-dropdown.js">
+    </script>
+
+
+    <!--
+    <script src="assets/theme/js/script.js"></script>
+    -->
 
 
 </body>

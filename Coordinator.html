@@ -5,739 +5,932 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="generator" content="MechaVerse">
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image:src" content="">
     <meta property="og:image" content="">
-    <meta name="twitter:title" content="Page 2">
+
+    <meta name="twitter:title" content="Coordinators | MechaVerse">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <meta name="description" content="">
+
+    <meta name="description"
+        content="Meet the faculty and student coordinators of MechaVerse, Department of Mechanical Engineering, Tezpur University.">
+
+    <title>Coordinators | MechaVerse</title>
 
 
-    <title>Coordinator</title>
+    <!-- =====================================================
+         BOOTSTRAP
+         ===================================================== -->
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+
+
+    <!-- =====================================================
+         OTHER STYLES
+         ===================================================== -->
+
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
+
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
+
     <link rel="stylesheet" href="assets/theme/css/style.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+         ===================================================== -->
+
     <link rel="preload"
-        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400,500,600,700,800i,900i&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
+
     <noscript>
+
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400,500i,600i,700i,800i,900i&display=swap">
+
     </noscript>
+
+
+    <!-- =====================================================
+         MOBIRISE
+         ===================================================== -->
+
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
 
+    <!-- =====================================================
+         CUSTOM COORDINATOR STYLES
+         ===================================================== -->
 
+    <style>
+        /* =================================================
+           PAGE BACKGROUND
+           ================================================= */
+
+        .coordinator-section {
+
+            padding: 100px 20px 90px;
+
+            background:
+                linear-gradient(135deg,
+                    #f7f7f4 0%,
+                    #ffffff 50%,
+                    #f2f2ee 100%);
+
+            min-height: 70vh;
+
+        }
+
+
+        /* =================================================
+           PAGE HEADING
+           ================================================= */
+
+        .coordinator-heading {
+
+            text-align: center;
+
+            margin-bottom: 45px;
+
+        }
+
+
+        .coordinator-eyebrow {
+
+            margin-bottom: 8px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            color: #666;
+
+        }
+
+
+        .coordinator-title {
+
+            margin: 0;
+
+            font-size: 56px;
+
+            font-weight: 800;
+
+            color: #222;
+
+        }
+
+
+        .coordinator-subtitle {
+
+            margin-top: 10px;
+
+            font-size: 18px;
+
+            color: #777;
+
+        }
+
+
+        /* =================================================
+           TAB CONTAINER
+           ================================================= */
+
+        .coordinator-wrapper {
+
+            max-width: 1050px;
+
+            margin: 0 auto;
+
+            background: #ffffff;
+
+            border-radius: 22px;
+
+            padding: 40px;
+
+            box-shadow:
+                0 15px 50px rgba(0, 0, 0, 0.09);
+
+        }
+
+
+        /* =================================================
+           TABS
+           ================================================= */
+
+        .coordinator-tabs {
+
+            justify-content: center;
+
+            border-bottom:
+                1px solid #eeeeea;
+
+            margin-bottom: 40px;
+
+        }
+
+
+        .coordinator-tabs .nav-link {
+
+            border: none !important;
+
+            background: transparent !important;
+
+            color: #777 !important;
+
+            font-weight: 600;
+
+            padding: 14px 25px;
+
+            position: relative;
+
+        }
+
+
+        .coordinator-tabs .nav-link.active {
+
+            color: #222 !important;
+
+        }
+
+
+        .coordinator-tabs .nav-link.active::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 20%;
+
+            right: 20%;
+
+            bottom: -1px;
+
+            height: 3px;
+
+            background: #222;
+
+            border-radius: 5px;
+
+        }
+
+
+        /* =================================================
+           FACULTY CARD
+           ================================================= */
+
+        .faculty-card {
+
+            max-width: 500px;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+
+        .faculty-image {
+
+            width: 180px;
+
+            height: 180px;
+
+            margin: 0 auto 25px;
+
+            overflow: hidden;
+
+            border-radius: 50%;
+
+            background: #eeeeea;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.12);
+
+        }
+
+
+        .faculty-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+        .faculty-name {
+
+            margin-bottom: 8px;
+
+            font-size: 28px;
+
+            font-weight: 700;
+
+            color: #222;
+
+        }
+
+
+        .faculty-role {
+
+            margin-bottom: 15px;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            color: #555;
+
+        }
+
+
+        .faculty-details {
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            color: #777;
+
+        }
+
+
+        /* =================================================
+           UNDER DEVELOPMENT CARD
+           ================================================= */
+
+        .development-card {
+
+            max-width: 700px;
+
+            margin: 20px auto 10px;
+
+            padding: 60px 40px;
+
+            text-align: center;
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(145deg,
+                    #f7f7f4,
+                    #ffffff);
+
+            border: 1px solid #eeeeea;
+
+        }
+
+
+        .development-icon {
+
+            width: 75px;
+
+            height: 75px;
+
+            margin: 0 auto 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #eeeeea;
+
+            font-size: 32px;
+
+        }
+
+
+        .development-title {
+
+            margin-bottom: 12px;
+
+            font-size: 28px;
+
+            font-weight: 700;
+
+            color: #222;
+
+        }
+
+
+        .development-text {
+
+            max-width: 560px;
+
+            margin: 0 auto;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            color: #777;
+
+        }
+
+
+        .development-badge {
+
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 8px 17px;
+
+            border-radius: 50px;
+
+            background: #222;
+
+            color: #fff;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        /* =================================================
+           MOBILE
+           ================================================= */
+
+        @media (max-width: 768px) {
+
+            .coordinator-section {
+
+                padding: 80px 15px 70px;
+
+            }
+
+
+            .coordinator-title {
+
+                font-size: 42px;
+
+            }
+
+
+            .coordinator-subtitle {
+
+                font-size: 16px;
+
+            }
+
+
+            .coordinator-wrapper {
+
+                padding: 25px 15px;
+
+                border-radius: 18px;
+
+            }
+
+
+            .coordinator-tabs {
+
+                flex-wrap: nowrap;
+
+                overflow-x: auto;
+
+                justify-content: flex-start;
+
+            }
+
+
+            .coordinator-tabs .nav-link {
+
+                white-space: nowrap;
+
+                padding:
+                    12px 15px;
+
+                font-size: 13px;
+
+            }
+
+
+            .faculty-image {
+
+                width: 150px;
+
+                height: 150px;
+
+            }
+
+
+            .faculty-name {
+
+                font-size: 24px;
+
+            }
+
+
+            .development-card {
+
+                padding: 45px 25px;
+
+            }
+
+
+            .development-title {
+
+                font-size: 24px;
+
+            }
+
+
+            .development-text {
+
+                font-size: 14px;
+
+            }
+
+        }
+    </style>
 
 </head>
 
+
 <body>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
 
     <section data-bs-version="5.1" class="menu menu2 cid-tCWzqlFkcs" once="menu" id="menu2-a">
 
+
         <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+
+
             <div class="container">
+
+
+                <!-- MECHAVERSE LOGO -->
+
                 <div class="navbar-brand">
+
                     <span class="navbar-logo">
+
                         <a href="index.html">
+
                             <img src="assets/Logo/Mechaverse logo.jpg" alt="MechaVerse" style="height: 3rem;">
+
                         </a>
+
                     </span>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7"
-                            href="index.html">MechaVerse</a></span>
+
+
+                    <span class="navbar-caption-wrap">
+
+                        <a class="navbar-caption text-black display-7" href="index.html">
+
+                            MechaVerse
+
+                        </a>
+
+                    </span>
+
                 </div>
+
+
+                <!-- MOBILE MENU -->
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
                     data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+
                     <div class="hamburger">
+
                         <span></span>
+
                         <span></span>
+
                         <span></span>
+
                         <span></span>
+
                     </div>
+
                 </button>
+
+
+                <!-- NAVIGATION -->
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
                     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="Announcement.html">
-                                Announcement</a></li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="Coordinator.html"
-                                aria-expanded="false">People</a></li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4"
-                                href="activities.html">Activities</a>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="Announcement.html">
+
+                                Announcement
+
+                            </a>
+
                         </li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4"
-                                href="contactus.html">Contact Us</a></li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="Coordinator.html">
+
+                                People
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="activities.html">
+
+                                Activities
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link link text-black display-4" href="contactus.html">
+
+                                Contact Us
+
+                            </a>
+
+                        </li>
+
+
                     </ul>
+
+
+                    <!-- TEZPUR UNIVERSITY LOGO -->
+
                     <span class="navbar-logo">
+
                         <a href="http://www.tezu.ernet.in/">
-                            <img src="assets/Logo/TU LOGO.png" alt="MechaVerse" style="height: 3rem;">
+
+                            <img src="assets/Logo/TU LOGO.png" alt="Tezpur University" style="height: 3rem;">
+
                         </a>
+
                     </span>
+
+
                 </div>
+
             </div>
+
         </nav>
+
     </section>
 
-    <section data-bs-version="5.1" class="tabs content18 cid-tCWAdSlCrA" id="tabs1-i">
 
 
+    <!-- =====================================================
+         COORDINATOR SECTION
+         ===================================================== -->
 
+    <section class="coordinator-section">
 
 
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2">
-                        <strong>Coordinator</strong>
-                    </h3>
 
-                </div>
+
+            <!-- PAGE HEADING -->
+
+            <div class="coordinator-heading">
+
+                <p class="coordinator-eyebrow">
+
+                    MECHAVERSE
+
+                </p>
+
+
+                <h1 class="coordinator-title">
+
+                    Coordinators
+
+                </h1>
+
+
+                <p class="coordinator-subtitle">
+
+                    Meet the faculty and student coordinators
+                    of MechaVerse.
+
+                </p>
+
             </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-12 col-md-8">
-                    <ul class="nav nav-tabs mb-4" role="tablist">
-                        <li class="nav-item first mbr-fonts-style"><a
-                                class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab"
-                                data-bs-toggle="tab" href="#tabs1-i_tab0" aria-selected="true"><strong>Faculty
-                                    Coordinator</strong></a></li>
-                        <li class="nav-item"><a class="nav-link mbr-fonts-style display-7" role="tab" data-toggle="tab"
-                                data-bs-toggle="tab" href="#tabs1-i_tab1" aria-selected="false">Student Representatives</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
-                                data-toggle="tab" data-bs-toggle="tab" href="#tabs1-i_tab2" aria-selected="true"></a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
-                                data-toggle="tab" data-bs-toggle="tab" href="#tabs1-i_tab3" aria-selected="true"></a>
-                        </li>
-
-
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab1" class="tab-pane in active" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <section data-bs-version="5.1" class="team1 cid-tCWA0APBzs" id="team1-h">
 
 
 
+            <!-- MAIN CONTENT -->
 
-                                        <div class="container">
-                                            <div class="row justify-content-center">
-                                                <div class="col-12">
-                                                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><br></h3>
-                                
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/vivekkr.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Vivek Kumar Mehta</strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>Assistant Professor</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- vkmehta@tezu.ernet.in
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                
-                                    
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
+            <div class="coordinator-wrapper">
+
+
+                <!-- =================================================
+                     TABS
+                     ================================================= -->
+
+                <ul class="nav nav-tabs coordinator-tabs" role="tablist">
+
+
+                    <!-- FACULTY -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" role="tab" data-toggle="tab" data-bs-toggle="tab"
+                            href="#faculty-coordinator" aria-selected="true">
+
+                            Faculty Coordinator
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- STUDENT -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" role="tab" data-toggle="tab" data-bs-toggle="tab"
+                            href="#student-coordinator" aria-selected="false">
+
+                            Student Coordinators
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+
+                <!-- =================================================
+                     TAB CONTENT
+                     ================================================= -->
+
+                <div class="tab-content">
+
+
+                    <!-- =================================================
+                         FACULTY COORDINATOR
+                         ================================================= -->
+
+                    <div id="faculty-coordinator" class="tab-pane fade show active" role="tabpanel">
+
+
+                        <div class="faculty-card">
+
+
+                            <div class="faculty-image">
+
+                                <img src="assets/images/vivekkr.jpg" alt="Vivek Kumar Mehta">
+
                             </div>
-                        </div>
-                        <div id="tab2" class="tab-pane" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <section data-bs-version="5.1" class="team1 cid-tCWA0APBzs" id="team1-h">
-                                        <div class="container">
-                                            <div class="row justify-content-center">
-                                                <div class="col-12">
-                                                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><br></h3>
-                                
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/joyshree.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Joyshree Dutta</strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>4th Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- joyshreedutta0001@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/Sumit Bhagat.png" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Sumit Bhagat</strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>4th Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- sumitdib2019@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/Ronak kushwaha.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Ronak Kumar Kushwaha </strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>3rd Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- ronakkushwaha10@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/chetan Sharma.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Chetan Sharma </strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>3rd Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- che2002tan@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/Himangshu Khatiwara.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Himangshu Khatiwara</strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>3rd Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- himangshukhatiwara11@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/Prashanti Roy.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Prashanti Roy </strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>2nd Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- prashantiroy99@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/chandrak.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Chandrak Bhattacharjee</strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>2nd Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- chandrakbhattacharjee@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/himanjit.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>HIMANJIT PATOWARY </strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>2nd Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- himanjit122@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/Yusuf Ali.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Yusuf Ali </strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>2nd Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- yali20707@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/Hrishikesh Malakar.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Hrishikesh Malakar </strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>1st Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- meb22039@tezu.ac.in
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-4">
-                                                    <div class="card-wrap">
-                                                        <div class="image-wrap">
-                                                            <img src="assets/images/Himanish Phukan.jpg" alt="MechaVerse">
-                                                        </div>
-                                                        <div class="content-wrap">
-                                                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                <strong>Himanish Phukan </strong>
-                                                            </h5>
-                                                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                <strong>1st Year</strong>
-                                                            </h6>
-                                                            <p class="card-text mbr-fonts-style align-center display-7">
-                                                                Department of Mechanical Engineering Tezpur University
-                                                                <br>Email:- phukangauri4@gmail.com
-                                                            </p>
-                                                       
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                
-                                
-                                            </div>
-                                        </div>
-                                    </section>
-                                   
-                                </div>
+
+
+                            <h2 class="faculty-name">
+
+                                Vivek Kumar Mehta
+
+                            </h2>
+
+
+                            <div class="faculty-role">
+
+                                Assistant Professor
+
                             </div>
+
+
+                            <p class="faculty-details">
+
+                                Department of Mechanical Engineering
+                                <br>
+                                Tezpur University
+                                <br><br>
+
+                                Email:
+                                <a href="mailto:vkmehta@tezu.ernet.in">
+
+                                    vkmehta@tezu.ernet.in
+
+                                </a>
+
+                            </p>
+
+
                         </div>
-                        <div id="tab3" class="tab-pane" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="mbr-text mbr-fonts-style display-7">
-                                        <section data-bs-version="5.1" class="team1 cid-tCWA0APBzs" id="team1-h">
-
-
-
-
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-12">
-                                                        <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><br></h3>
-                                    
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-4">
-                                                        <div class="card-wrap">
-                                                            <div class="image-wrap">
-                                                                <img src="assets/images/team1.jpg" alt="MechaVerse">
-                                                            </div>
-                                                            <div class="content-wrap">
-                                                                <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                    <strong>John Smith</strong>
-                                                                </h5>
-                                                                <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                    <strong>Programmer</strong>
-                                                                </h6>
-                                                                <p class="card-text mbr-fonts-style align-center display-7">
-                                                                    No special actions required, all sites you make with Mobirise are mobile-friendly.
-                                                                </p>
-                                                                <div class="social-row display-7">
-                                                                    <div class="soc-item">
-                                                                        <a href="https://www.facebook.com/Mobirise/" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-facebook"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://twitter.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-twitter"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://instagram.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-instagram"></span>
-                                                                        </a>
-                                                                    </div>
-                                    
-                                    
-                                                                </div>
-                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                                    <div class="col-sm-6 col-lg-4">
-                                                        <div class="card-wrap">
-                                                            <div class="image-wrap">
-                                                                <img src="assets/images/team2.jpg" alt="MechaVerse">
-                                                            </div>
-                                                            <div class="content-wrap">
-                                                                <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                    <strong>Sarah Palmer</strong>
-                                                                </h5>
-                                                                <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                    <strong>Manager</strong>
-                                                                </h6>
-                                                                <p class="card-text mbr-fonts-style align-center display-7">
-                                                                    Use Mobirise website building software to create multiple sites for your clients.
-                                                                </p>
-                                                                <div class="social-row display-7">
-                                                                    <div class="soc-item">
-                                                                        <a href="https://www.facebook.com/Mobirise/" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-facebook"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://twitter.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-twitter"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://instagram.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-instagram"></span>
-                                                                        </a>
-                                                                    </div>
-                                    
-                                    
-                                                                </div>
-                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                                
-                                    
-                                    
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab4" class="tab-pane" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="mbr-text mbr-fonts-style display-7">
-                                        <section data-bs-version="5.1" class="team1 cid-tCWA0APBzs" id="team1-h">
-
-
-
-
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-12">
-                                                        <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><br></h3>
-                                    
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-4">
-                                                        <div class="card-wrap">
-                                                            <div class="image-wrap">
-                                                                <img src="assets/images/team1.jpg" alt="MechaVerse">
-                                                            </div>
-                                                            <div class="content-wrap">
-                                                                <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                    <strong>John Smith</strong>
-                                                                </h5>
-                                                                <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                    <strong>Programmer</strong>
-                                                                </h6>
-                                                                <p class="card-text mbr-fonts-style align-center display-7">
-                                                                    No special actions required, all sites you make with Mobirise are mobile-friendly.
-                                                                </p>
-                                                                <div class="social-row display-7">
-                                                                    <div class="soc-item">
-                                                                        <a href="https://www.facebook.com/Mobirise/" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-facebook"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://twitter.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-twitter"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://instagram.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-instagram"></span>
-                                                                        </a>
-                                                                    </div>
-                                    
-                                    
-                                                                </div>
-                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                                    <div class="col-sm-6 col-lg-4">
-                                                        <div class="card-wrap">
-                                                            <div class="image-wrap">
-                                                                <img src="assets/images/team2.jpg" alt="MechaVerse">
-                                                            </div>
-                                                            <div class="content-wrap">
-                                                                <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                                                    <strong>Sarah Palmer</strong>
-                                                                </h5>
-                                                                <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                                                    <strong>Manager</strong>
-                                                                </h6>
-                                                                <p class="card-text mbr-fonts-style align-center display-7">
-                                                                    Use Mobirise website building software to create multiple sites for your clients.
-                                                                </p>
-                                                                <div class="social-row display-7">
-                                                                    <div class="soc-item">
-                                                                        <a href="https://www.facebook.com/Mobirise/" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-facebook"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://twitter.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-twitter"></span>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="soc-item">
-                                                                        <a href="https://instagram.com/mobirise" target="_blank">
-                                                                            <span class="mbr-iconfont socicon socicon-instagram"></span>
-                                                                        </a>
-                                                                    </div>
-                                    
-                                    
-                                                                </div>
-                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    
-                                                
-                                    
-                                    
-                                                </div>
-                                            </div>
-                                        </section></p>
-                                </div>
-                            </div>
-                        </div>
-
 
                     </div>
+
+
+
+                    <!-- =================================================
+                         STUDENT COORDINATORS
+                         ================================================= -->
+
+                    <div id="student-coordinator" class="tab-pane fade" role="tabpanel">
+
+
+                        <div class="development-card">
+
+
+                            <div class="development-icon">
+
+                                ⚙
+
+                            </div>
+
+
+                            <h2 class="development-title">
+
+                                Student Coordinator Page
+                                <br>
+                                Under Development
+
+                            </h2>
+
+
+                            <p class="development-text">
+
+                                The Student Coordinator section of
+                                MechaVerse is currently being updated.
+
+                                <br><br>
+
+                                The new student coordinators and their
+                                respective details will be added soon.
+
+                                Thank you for your patience.
+
+                            </p>
+
+
+                            <span class="development-badge">
+
+                                COMING SOON
+
+                            </span>
+
+
+                        </div>
+
+                    </div>
+
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- <section data-bs-version="5.1" class="team1 cid-tCWA0APBzs" id="team1-h">
 
 
-
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><br></h3>
-
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="card-wrap">
-                        <div class="image-wrap">
-                            <img src="assets/images/team1.jpg" alt="MechaVerse">
-                        </div>
-                        <div class="content-wrap">
-                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                <strong>John Smith</strong>
-                            </h5>
-                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                <strong>Programmer</strong>
-                            </h6>
-                            <p class="card-text mbr-fonts-style align-center display-7">
-                                No special actions required, all sites you make with Mobirise are mobile-friendly.
-                            </p>
-                            <div class="social-row display-7">
-                                <div class="soc-item">
-                                    <a href="https://www.facebook.com/Mobirise/" target="_blank">
-                                        <span class="mbr-iconfont socicon socicon-facebook"></span>
-                                    </a>
-                                </div>
-                                <div class="soc-item">
-                                    <a href="https://twitter.com/mobirise" target="_blank">
-                                        <span class="mbr-iconfont socicon socicon-twitter"></span>
-                                    </a>
-                                </div>
-                                <div class="soc-item">
-                                    <a href="https://instagram.com/mobirise" target="_blank">
-                                        <span class="mbr-iconfont socicon socicon-instagram"></span>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="card-wrap">
-                        <div class="image-wrap">
-                            <img src="assets/images/team2.jpg" alt="MechaVerse">
-                        </div>
-                        <div class="content-wrap">
-                            <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                                <strong>Sarah Palmer</strong>
-                            </h5>
-                            <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
-                                <strong>Manager</strong>
-                            </h6>
-                            <p class="card-text mbr-fonts-style align-center display-7">
-                                Use Mobirise website building software to create multiple sites for your clients.
-                            </p>
-                            <div class="social-row display-7">
-                                <div class="soc-item">
-                                    <a href="https://www.facebook.com/Mobirise/" target="_blank">
-                                        <span class="mbr-iconfont socicon socicon-facebook"></span>
-                                    </a>
-                                </div>
-                                <div class="soc-item">
-                                    <a href="https://twitter.com/mobirise" target="_blank">
-                                        <span class="mbr-iconfont socicon socicon-twitter"></span>
-                                    </a>
-                                </div>
-                                <div class="soc-item">
-                                    <a href="https://instagram.com/mobirise" target="_blank">
-                                        <span class="mbr-iconfont socicon socicon-instagram"></span>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            
-
-
-            </div>
-        </div>
-    </section> -->
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
 
     <section data-bs-version="5.1" class="footer3 cid-tCWzxvGlwb" once="footers" id="footer3-g">
 
 
-
-
-
         <div class="container">
+
+
             <div class="media-container-row align-center mbr-white">
-        
-                
+
+
                 <div class="row row-copirayt">
+
                     <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                        © Copyright 2023 MechaVerse. All Rights Reserved.
+
+                        © Copyright 2026 MechaVerse.
+                        All Rights Reserved.
+
                     </p>
+
                 </div>
-                <div>Developed by Aryan Kumar Singh </div>
+
+
+                <div>
+
+                    Managed by Siddhartha Sengupta
+
+                </div>
+
+
             </div>
+
         </div>
+
     </section>
-    
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/ytplayer/index.js"></script>
-    <script src="assets/mbr-tabs/mbr-tabs.js"></script>
-    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-    <!-- <script src="assets/theme/js/script.js"></script> -->
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <script src="assets/smoothscroll/smooth-scroll.js">
+    </script>
+
+
+    <script src="assets/ytplayer/index.js">
+    </script>
+
+
+    <script src="assets/mbr-tabs/mbr-tabs.js">
+    </script>
+
+
+    <script src="assets/dropdown/js/navbar-dropdown.js">
+    </script>
+
+
+    <!--
+    <script src="assets/theme/js/script.js"></script>
+    -->
 
 
 </body>

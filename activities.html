@@ -1,211 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MechaVerse">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image:src" content="">
-    <meta property="og:image" content="">
-    <meta name="twitter:title" content="Activities | MechaVerse">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <meta name="generator" content="MechaVerse">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1">
 
     <meta name="description"
-        content="Explore the latest activities, events and initiatives organized by MechaVerse, Tezpur University.">
+        content="Activities and events of MechaVerse, Department of Mechanical Engineering, Tezpur University.">
 
     <title>Activities | MechaVerse</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
 
-    <!-- Other styles -->
-    <link rel="stylesheet" href="assets/dropdown/css/style.css">
-    <link rel="stylesheet" href="assets/socicon/css/styles.css">
-    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <!-- =====================================================
+         FAVICON
+         ===================================================== -->
 
-    <!-- Google Font -->
+    <link rel="shortcut icon"
+        href="assets/images/logo.png"
+        type="image/x-icon">
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+         ===================================================== -->
+
+    <link rel="stylesheet"
+        href="assets/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet"
+        href="assets/bootstrap/css/bootstrap-grid.min.css">
+
+    <link rel="stylesheet"
+        href="assets/bootstrap/css/bootstrap-reboot.min.css">
+
+
+    <!-- =====================================================
+         OTHER STYLES
+         ===================================================== -->
+
+    <link rel="stylesheet"
+        href="assets/web/assets/mobirise-icons2/mobirise2.css">
+
+    <link rel="stylesheet"
+        href="assets/parallax/jarallax.css">
+
+    <link rel="stylesheet"
+        href="assets/dropdown/css/style.css">
+
+    <link rel="stylesheet"
+        href="assets/socicon/css/styles.css">
+
+    <link rel="stylesheet"
+        href="assets/theme/css/style.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+         ===================================================== -->
+
     <link rel="preload"
-        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript>
+
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900&display=swap">
+
     </noscript>
 
-    <!-- Mobirise additional CSS -->
-    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
 
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="preload"
+        as="style"
+        href="assets/mobirise/css/mbr-additional.css">
+
+    <link rel="stylesheet"
+        href="assets/mobirise/css/mbr-additional.css"
+        type="text/css">
 
 
-    <!-- =========================================================
-         MECHMINDS CUSTOM STYLES
-         ========================================================= -->
+    <!-- =====================================================
+         CUSTOM ACTIVITY PAGE CSS
+         ===================================================== -->
 
     <style>
-        /* =====================================================
-           MAIN EVENT SECTION
-           ===================================================== */
 
-        .mechminds-section {
-            padding: 110px 20px 100px;
+        /* =================================================
+           GENERAL
+           ================================================= */
+
+        body {
+            background: #ffffff;
+        }
+
+
+        /* =================================================
+           DEPARTMENT HEADER
+           ================================================= */
+
+        .department-header {
+
+            padding: 100px 20px 30px;
+
+            text-align: center;
+
+            background: #ffffff;
+
+        }
+
+        .department-header h1 {
+
+            margin: 0;
+
+            font-family: Georgia, serif;
+
+            font-size: 36px;
+
+            font-weight: 700;
+
+            color: #111;
+
+        }
+
+        .department-header h2 {
+
+            margin-top: 8px;
+
+            font-family: Georgia, serif;
+
+            font-size: 25px;
+
+            font-weight: 400;
+
+            color: #333;
+
+        }
+
+
+        /* =================================================
+           RECENT ACTIVITY SECTION
+           ================================================= */
+
+        .recent-activity-section {
+
+            padding: 80px 20px 90px;
 
             background:
-                linear-gradient(135deg,
+                linear-gradient(
+                    135deg,
                     #f7f7f4 0%,
                     #ffffff 50%,
-                    #f2f2ee 100%);
+                    #f2f2ee 100%
+                );
+
         }
 
 
-        /* =====================================================
-           HEADING
-           ===================================================== */
+        .activity-header {
 
-        .mechminds-heading {
             text-align: center;
+
             margin-bottom: 50px;
+
         }
 
 
-        .mechminds-eyebrow {
+        .activity-eyebrow {
+
             margin-bottom: 8px;
 
-            font-size: 13px;
+            font-size: 12px;
+
             font-weight: 700;
 
             letter-spacing: 4px;
 
-            color: #555;
+            color: #777;
+
         }
 
 
-        .mechminds-title {
+        .activity-title {
+
             margin: 0;
 
-            font-size: 60px;
+            font-size: 50px;
+
             line-height: 1.1;
 
             font-weight: 800;
 
-            letter-spacing: 2px;
-
             color: #222;
+
         }
 
 
-        .mechminds-subtitle {
-            margin-top: 10px;
+        .activity-subtitle {
 
-            font-size: 20px;
+            max-width: 700px;
+
+            margin: 15px auto 0;
+
+            font-size: 17px;
+
+            line-height: 1.7;
 
             color: #777;
+
         }
 
 
-        /* =====================================================
-           EVENT CARD
-           ===================================================== */
+        /* =================================================
+           MECHMINDS CARD
+           ================================================= */
 
-        .mechminds-card {
-            width: 100%;
-            max-width: 1150px;
+        .recent-activity-card {
+
+            max-width: 1100px;
 
             margin: 0 auto;
 
-            display: grid;
-
-            grid-template-columns: 45% 55%;
-
             background: #ffffff;
 
-            border-radius: 24px;
+            border: 1px solid #eeeeea;
 
-            overflow: hidden;
+            border-radius: 22px;
 
-            box-shadow:
-                0 20px 60px rgba(0, 0, 0, 0.12);
-        }
-
-
-        /* =====================================================
-           POSTER
-           ===================================================== */
-
-        .mechminds-poster {
-            padding: 40px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            background:
-                linear-gradient(145deg,
-                    #eeeeea,
-                    #f8f8f5);
-        }
-
-
-        .mechminds-poster img {
-            width: 100%;
-
-            max-width: 500px;
-
-            height: auto;
-
-            display: block;
-
-            border-radius: 8px;
+            padding: 45px;
 
             box-shadow:
-                0 15px 35px rgba(0, 0, 0, 0.18);
+                0 15px 45px rgba(0, 0, 0, 0.08);
 
-            transition:
-                transform 0.4s ease,
-                box-shadow 0.4s ease;
         }
 
 
-        .mechminds-poster img:hover {
-            transform: scale(1.015);
+        .recent-badge {
 
-            box-shadow:
-                0 20px 45px rgba(0, 0, 0, 0.22);
-        }
-
-
-        /* =====================================================
-           CONTENT
-           ===================================================== */
-
-        .mechminds-content {
-            padding: 60px 55px;
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: center;
-        }
-
-
-        /* =====================================================
-           BADGE
-           ===================================================== */
-
-        .mechminds-badge {
             display: inline-block;
-
-            width: fit-content;
 
             padding: 7px 15px;
 
@@ -217,112 +255,92 @@
 
             color: #333;
 
-            font-size: 11px;
+            font-size: 10px;
 
             font-weight: 700;
 
             letter-spacing: 1.5px;
+
         }
 
 
-        /* =====================================================
-           TITLE
-           ===================================================== */
+        .recent-date {
 
-        .mechminds-content h2 {
-            margin: 0;
+            margin-bottom: 8px;
 
-            font-size: 48px;
+            font-size: 12px;
 
-            line-height: 1.1;
+            font-weight: 600;
 
-            font-weight: 800;
+            letter-spacing: 1.5px;
+
+            color: #999;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .recent-title {
+
+            margin: 0 0 18px;
+
+            font-size: 34px;
+
+            font-weight: 750;
 
             color: #222;
+
         }
 
 
-        .mechminds-content h3 {
-            margin: 7px 0 25px;
+        .recent-description {
 
-            font-size: 21px;
+            margin-bottom: 18px;
 
-            line-height: 1.4;
+            font-size: 16px;
 
-            font-weight: 500;
-
-            color: #555;
-        }
-
-
-        /* =====================================================
-           DESCRIPTION
-           ===================================================== */
-
-        .mechminds-description {
-            margin-bottom: 14px;
-
-            font-size: 15px;
-
-            line-height: 1.75;
+            line-height: 1.8;
 
             color: #666;
+
         }
 
 
-        .mechminds-description strong {
-            color: #333;
-        }
+        /* =================================================
+           DETAILS
+           ================================================= */
 
+        .recent-details {
 
-        /* =====================================================
-           EVENT DETAILS
-           ===================================================== */
+            display: grid;
 
-        .mechminds-info {
-            display: flex;
-
-            flex-direction: column;
-
-            gap: 16px;
-
-            margin: 22px 0 30px;
-        }
-
-
-        .mechminds-info-item {
-            display: flex;
-
-            align-items: center;
+            grid-template-columns:
+                repeat(3, 1fr);
 
             gap: 15px;
+
+            margin: 30px 0 40px;
+
         }
 
 
-        .mechminds-icon {
-            width: 44px;
-            height: 44px;
+        .recent-detail {
 
-            min-width: 44px;
+            padding: 18px;
 
-            display: flex;
+            border-radius: 12px;
 
-            align-items: center;
+            background: #f7f7f4;
 
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background: #eeeeea;
-
-            font-size: 18px;
         }
 
 
-        .mechminds-info-item span {
+        .recent-detail span {
+
             display: block;
 
-            margin-bottom: 2px;
+            margin-bottom: 5px;
 
             font-size: 10px;
 
@@ -330,259 +348,384 @@
 
             letter-spacing: 1.5px;
 
-            color: #888;
+            color: #999;
+
         }
 
 
-        .mechminds-info-item strong {
+        .recent-detail strong {
+
             display: block;
 
-            font-size: 15px;
+            font-size: 14px;
 
             font-weight: 600;
 
             color: #222;
+
         }
 
 
-        /* =====================================================
-           REGISTRATION BUTTON
-           ===================================================== */
+        /* =================================================
+           PHOTO GALLERY
+           ================================================= */
 
-        .mechminds-register {
-            width: fit-content;
+        .gallery-title {
 
-            display: inline-flex;
+            margin: 0 0 20px;
 
-            align-items: center;
-
-            justify-content: center;
-
-            gap: 12px;
-
-            padding: 15px 25px;
-
-            border-radius: 8px;
-
-            background: #222;
-
-            color: #ffffff !important;
-
-            text-decoration: none !important;
-
-            font-size: 14px;
+            font-size: 22px;
 
             font-weight: 700;
 
+            color: #222;
+
+        }
+
+
+        .mechminds-gallery {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+
+        }
+
+
+        .mechminds-gallery img {
+
+            width: 100%;
+
+            height: 260px;
+
+            object-fit: cover;
+
+            border-radius: 14px;
+
+            display: block;
+
             transition:
-                background 0.3s ease,
                 transform 0.3s ease,
                 box-shadow 0.3s ease;
+
         }
 
 
-        .mechminds-register:hover {
-            background: #444;
+        .mechminds-gallery img:hover {
 
-            transform: translateY(-3px);
+            transform: translateY(-4px);
 
             box-shadow:
-                0 10px 25px rgba(0, 0, 0, 0.18);
+                0 12px 30px rgba(0, 0, 0, 0.15);
+
         }
 
 
-        .mechminds-register-arrow {
-            font-size: 18px;
+        /* =================================================
+           PAST EVENTS
+           ================================================= */
+
+        .past-events-section {
+
+            padding: 90px 20px 100px;
+
+            background: #ffffff;
+
+        }
+
+
+        .past-events-header {
+
+            text-align: center;
+
+            margin-bottom: 45px;
+
+        }
+
+
+        .past-events-header h2 {
+
+            margin: 0;
+
+            font-size: 42px;
+
+            font-weight: 800;
+
+            color: #222;
+
+        }
+
+
+        .past-events-header p {
+
+            margin-top: 10px;
+
+            color: #777;
+
+            font-size: 16px;
+
+        }
+
+
+        .past-events-grid {
+
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .past-event-card {
+
+            background: #ffffff;
+
+            border: 1px solid #eeeeea;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.06);
 
             transition:
-                transform 0.3s ease;
-        }
-
-
-        .mechminds-register:hover .mechminds-register-arrow {
-            transform: translateX(4px);
-        }
-
-
-        /* =====================================================
-           REGISTRATION NOTE
-           ===================================================== */
-
-        .mechminds-note {
-            margin-top: 11px;
-
-            margin-bottom: 0;
-
-            font-size: 11px;
-
-            line-height: 1.5;
-
-            color: #999;
-        }
-
-
-        /* =====================================================
-           FOOTER SPACING
-           ===================================================== */
-
-        .mechminds-section+.footer3 {
-            margin-top: 0;
-        }
-
-
-        /* =====================================================
-           TABLET
-           ===================================================== */
-
-        @media (max-width: 991px) {
-
-            .mechminds-card {
-                grid-template-columns: 1fr;
-            }
-
-
-            .mechminds-poster {
-                padding: 40px 30px;
-            }
-
-
-            .mechminds-poster img {
-                max-width: 550px;
-            }
-
-
-            .mechminds-content {
-                padding: 50px 45px;
-            }
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
 
         }
 
 
-        /* =====================================================
+        .past-event-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.10);
+
+        }
+
+
+        .past-event-image {
+
+            width: 100%;
+
+            height: 190px;
+
+            object-fit: cover;
+
+            display: block;
+
+        }
+
+
+        .past-event-content {
+
+            padding: 20px;
+
+        }
+
+
+        .past-event-title {
+
+            margin: 0 0 10px;
+
+            font-size: 17px;
+
+            line-height: 1.4;
+
+            font-weight: 700;
+
+            color: #222;
+
+        }
+
+
+        .past-event-date {
+
+            margin: 0;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+
+            color: #777;
+
+        }
+
+
+        /* =================================================
+           EXISTING PHOTO CAROUSEL
+           ================================================= */
+
+        .photo-carousel-section {
+
+            padding: 80px 20px;
+
+            background: #f7f7f4;
+
+        }
+
+
+        .photo-carousel-title {
+
+            margin-bottom: 30px;
+
+            text-align: center;
+
+            font-size: 38px;
+
+            font-weight: 800;
+
+            color: #222;
+
+        }
+
+
+        .carousel-image {
+
+            width: 100%;
+
+            height: 550px;
+
+            object-fit: cover;
+
+        }
+
+
+        /* =================================================
            MOBILE
-           ===================================================== */
+           ================================================= */
+
+        @media (max-width: 900px) {
+
+            .past-events-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+            .mechminds-gallery {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+        }
+
 
         @media (max-width: 768px) {
 
-            .mechminds-section {
-                padding: 80px 15px 70px;
+            .department-header {
+
+                padding-top: 90px;
+
             }
 
 
-            .mechminds-heading {
-                margin-bottom: 35px;
+            .department-header h1 {
+
+                font-size: 28px;
+
             }
 
 
-            .mechminds-eyebrow {
-                font-size: 11px;
+            .department-header h2 {
 
-                letter-spacing: 3px;
+                font-size: 21px;
+
             }
 
 
-            .mechminds-title {
-                font-size: 42px;
+            .activity-title {
+
+                font-size: 40px;
+
             }
 
 
-            .mechminds-subtitle {
-                font-size: 17px;
-            }
+            .recent-activity-card {
 
+                padding: 30px 25px;
 
-            .mechminds-card {
                 border-radius: 18px;
+
             }
 
 
-            .mechminds-poster {
-                padding: 25px;
+            .recent-title {
+
+                font-size: 27px;
+
             }
 
 
-            .mechminds-content {
-                padding: 35px 25px;
+            .recent-details {
+
+                grid-template-columns: 1fr;
+
             }
 
 
-            .mechminds-content h2 {
-                font-size: 36px;
-            }
+            .carousel-image {
 
+                height: 350px;
 
-            .mechminds-content h3 {
-                font-size: 18px;
-
-                margin-bottom: 20px;
-            }
-
-
-            .mechminds-description {
-                font-size: 14px;
-
-                line-height: 1.7;
-            }
-
-
-            .mechminds-info {
-                gap: 14px;
-
-                margin-top: 20px;
-            }
-
-
-            .mechminds-register {
-                width: 100%;
-
-                text-align: center;
             }
 
         }
 
 
-        /* =====================================================
-           SMALL MOBILE
-           ===================================================== */
+        @media (max-width: 600px) {
 
-        @media (max-width: 480px) {
+            .mechminds-gallery {
 
-            .mechminds-section {
-                padding-left: 12px;
-                padding-right: 12px;
+                grid-template-columns: 1fr;
+
             }
 
 
-            .mechminds-title {
-                font-size: 36px;
+            .past-events-grid {
+
+                grid-template-columns: 1fr;
+
             }
 
 
-            .mechminds-subtitle {
-                font-size: 15px;
+            .mechminds-gallery img {
+
+                height: 250px;
+
             }
 
 
-            .mechminds-poster {
-                padding: 18px;
+            .activity-title {
+
+                font-size: 34px;
+
             }
 
 
-            .mechminds-content {
-                padding: 30px 20px;
-            }
+            .past-events-header h2 {
 
+                font-size: 34px;
 
-            .mechminds-content h2 {
-                font-size: 32px;
-            }
-
-
-            .mechminds-content h3 {
-                font-size: 17px;
             }
 
         }
+
     </style>
 
 </head>
@@ -591,17 +734,43 @@
 <body>
 
 
-    <!-- =========================================================
+    <!-- =====================================================
+         DEPARTMENT HEADER
+         ===================================================== -->
+
+    <section class="department-header">
+
+        <h1>
+            Department of Mechanical Engineering
+        </h1>
+
+        <h2>
+            Tezpur University
+        </h2>
+
+    </section>
+
+
+
+    <!-- =====================================================
          NAVBAR
-         ========================================================= -->
+         ===================================================== -->
 
-    <section data-bs-version="5.1" class="menu menu2 cid-tCWzqlFkcs" once="menu" id="menu2-a">
+    <section
+        data-bs-version="5.1"
+        class="menu menu2 cid-tCWhykHpD0"
+        once="menu"
+        id="menu2-3">
 
-        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+
+        <nav
+            class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+
 
             <div class="container">
 
-                <!-- Logo + Brand -->
+
+                <!-- MECHAVERSE LOGO -->
 
                 <div class="navbar-brand">
 
@@ -609,7 +778,10 @@
 
                         <a href="index.html">
 
-                            <img src="assets/Logo/Mechaverse logo.jpg" alt="MechaVerse" style="height: 3rem;">
+                            <img
+                                src="assets/Logo/Mechaverse logo.png"
+                                alt="MechaVerse"
+                                style="height: 3rem;">
 
                         </a>
 
@@ -618,7 +790,9 @@
 
                     <span class="navbar-caption-wrap">
 
-                        <a class="navbar-caption text-black display-7" href="index.html">
+                        <a
+                            class="navbar-caption text-black display-7"
+                            href="index.html">
 
                             MechaVerse
 
@@ -629,11 +803,19 @@
                 </div>
 
 
-                <!-- Mobile menu button -->
+                <!-- MOBILE MENU -->
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
-                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
 
                     <div class="hamburger">
 
@@ -647,16 +829,23 @@
                 </button>
 
 
-                <!-- Navigation -->
+                <!-- NAVIGATION -->
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
 
-                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+
+                    <ul
+                        class="navbar-nav nav-dropdown"
+                        data-app-modern-menu="true">
 
 
                         <li class="nav-item">
 
-                            <a class="nav-link link text-black display-4" href="Announcement.html">
+                            <a
+                                class="nav-link link text-black display-4"
+                                href="Announcement.html">
 
                                 Announcement
 
@@ -667,7 +856,9 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link link text-black display-4" href="Coordinator.html" aria-expanded="false">
+                            <a
+                                class="nav-link link text-black display-4"
+                                href="Coordinator.html">
 
                                 People
 
@@ -678,7 +869,9 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link link text-black display-4" href="activities.html">
+                            <a
+                                class="nav-link link text-black display-4"
+                                href="activities.html">
 
                                 Activities
 
@@ -689,7 +882,9 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link link text-black display-4" href="contactus.html">
+                            <a
+                                class="nav-link link text-black display-4"
+                                href="contactus.html">
 
                                 Contact us
 
@@ -701,17 +896,22 @@
                     </ul>
 
 
-                    <!-- TU Logo -->
+                    <!-- TEZPUR UNIVERSITY LOGO -->
 
                     <span class="navbar-logo">
 
-                        <a href="http://www.tezu.ernet.in/">
+                        <a
+                            href="http://www.tezu.ernet.in/">
 
-                            <img src="assets/Logo/TU LOGO.png" alt="Tezpur University" style="height: 3rem;">
+                            <img
+                                src="assets/Logo/TU LOGO.png"
+                                alt="Tezpur University"
+                                style="height: 3rem;">
 
                         </a>
 
                     </span>
+
 
                 </div>
 
@@ -723,34 +923,35 @@
 
 
 
-    <!-- =========================================================
-         MECHMINDS EVENT
-         ========================================================= -->
+    <!-- =====================================================
+         RECENT ACTIVITY
+         ===================================================== -->
 
-    <section class="mechminds-section">
+    <section class="recent-activity-section">
+
 
         <div class="container">
 
 
-            <!-- Event Heading -->
+            <!-- HEADER -->
 
-            <div class="mechminds-heading">
+            <div class="activity-header">
 
-                <p class="mechminds-eyebrow">
+                <p class="activity-eyebrow">
 
-                    MECHAVERSE PRESENTS
+                    RECENT ACTIVITY
 
                 </p>
 
 
-                <h1 class="mechminds-title">
+                <h1 class="activity-title">
 
                     MECHMINDS
 
                 </h1>
 
 
-                <p class="mechminds-subtitle">
+                <p class="activity-subtitle">
 
                     Mechanical Model Demonstration
 
@@ -760,199 +961,143 @@
 
 
 
-            <!-- Event Card -->
+            <!-- ACTIVITY CARD -->
 
-            <div class="mechminds-card">
+            <div class="recent-activity-card">
 
 
-                <!-- =============================
-                     POSTER
-                     ============================= -->
+                <span class="recent-badge">
 
-                <div class="mechminds-poster">
+                    COMPLETED
 
-                    <img src="assets/images/mechminds.png" alt="MechMinds - Mechanical Model Demonstration">
+                </span>
+
+
+                <div class="recent-date">
+
+                    25 August 2026
 
                 </div>
 
 
+                <h2 class="recent-title">
 
-                <!-- =============================
-                     EVENT INFORMATION
-                     ============================= -->
+                    MECHMINDS: Mechanical Model Demonstration
 
-                <div class="mechminds-content">
-
-
-                    <span class="mechminds-badge">
-
-                        UPCOMING EVENT
-
-                    </span>
+                </h2>
 
 
-                    <h2>
+                <p class="recent-description">
 
-                        MECHMINDS
+                    MechaVerse successfully conducted
+                    <strong>MECHMINDS</strong>, a mechanical model
+                    demonstration that brought together students to
+                    showcase their mechanical creations, ideas and
+                    engineering concepts.
 
-                    </h2>
-
-
-                    <h3>
-
-                        Mechanical Model Demonstration
-
-                    </h3>
+                </p>
 
 
-                    <!-- Description -->
+                <p class="recent-description">
 
-                    <p class="mechminds-description">
+                    The activity provided students with an opportunity
+                    to present their models, demonstrate their
+                    engineering concepts and interact with fellow
+                    students interested in mechanical design and
+                    innovation.
 
-                        MechaVerse is organising a Mechanical Model
-                        Demonstration on
-                        <strong>25th August 2026</strong>.
-
-                        We invite you to showcase your creation with us
-                        and share your ideas, creativity and engineering
-                        concepts.
-
-                    </p>
+                </p>
 
 
-                    <p class="mechminds-description">
 
-                        If you are interested in showcasing your mechanical
-                        model, please fill out the registration form below.
+                <!-- EVENT DETAILS -->
 
-                        You are also welcome if you are interested to see
-                        and learn about the models.
-
-                    </p>
+                <div class="recent-details">
 
 
-                    <p class="mechminds-description">
+                    <div class="recent-detail">
+
+                        <span>
+
+                            DATE
+
+                        </span>
 
                         <strong>
-                            Come explore. Come learn. Come create.
+
+                            25 August 2026
+
                         </strong>
-
-                    </p>
-
-
-
-                    <!-- =============================
-                         EVENT DETAILS
-                         ============================= -->
-
-                    <div class="mechminds-info">
-
-
-                        <!-- Date -->
-
-                        <div class="mechminds-info-item">
-
-                            <div class="mechminds-icon">
-
-                                📅
-
-                            </div>
-
-
-                            <div>
-
-                                <span>DATE</span>
-
-                                <strong>
-                                    25 August 2026
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- Time -->
-
-                        <div class="mechminds-info-item">
-
-                            <div class="mechminds-icon">
-
-                                ⏰
-
-                            </div>
-
-
-                            <div>
-
-                                <span>TIME</span>
-
-                                <strong>
-                                    4:30 PM
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- Venue -->
-
-                        <div class="mechminds-info-item">
-
-                            <div class="mechminds-icon">
-
-                                📍
-
-                            </div>
-
-
-                            <div>
-
-                                <span>VENUE</span>
-
-                                <strong>
-                                    MELH II
-                                </strong>
-
-                            </div>
-
-                        </div>
-
 
                     </div>
 
 
+                    <div class="recent-detail">
 
-                    <!-- =============================
-                         REGISTRATION BUTTON
-                         ============================= -->
+                        <span>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoykyo-mKLj0y_moEycQ5pWwpQKNYbiPOpgkjlCII4sGteIw/viewform"
-                        target="_blank" rel="noopener noreferrer" class="mechminds-register">
-
-                        Register to Showcase Your Model
-
-                        <span class="mechminds-register-arrow">
-
-                            →
+                            TIME
 
                         </span>
 
-                    </a>
+                        <strong>
+
+                            4:30 PM
+
+                        </strong>
+
+                    </div>
 
 
-                    <p class="mechminds-note">
+                    <div class="recent-detail">
 
-                        Registration is required for participants
-                        showcasing their models.
+                        <span>
 
-                    </p>
+                            VENUE
+
+                        </span>
+
+                        <strong>
+
+                            MELH II
+
+                        </strong>
+
+                    </div>
 
 
                 </div>
+
+
+
+                <!-- PHOTO GALLERY -->
+
+                <h3 class="gallery-title">
+
+                    Event Highlights
+
+                </h3>
+
+
+                <div class="mechminds-gallery">
+
+
+                    <img
+                        src="assets/images/mechminds-1.jpg"
+                        alt="MECHMINDS mechanical models">
+
+
+                    <img
+                        src="assets/images/mechminds-2.jpg"
+                        alt="MECHMINDS 6-DOF robotic arm">
+
+
+                    <img
+                        src="assets/images/mechminds-3.jpg"
+                        alt="MECHMINDS robotic model">
+
+                </div>
+
 
             </div>
 
@@ -962,21 +1107,386 @@
 
 
 
-    <!-- =========================================================
-         FOOTER
-         ========================================================= -->
+    <!-- =====================================================
+         PAST EVENTS
+         ===================================================== -->
 
-    <section data-bs-version="5.1" class="footer3 cid-tCWzxvGlwb" once="footers" id="footer3-g">
+    <section class="past-events-section">
 
 
         <div class="container">
 
-            <div class="media-container-row align-center mbr-white">
+
+            <div class="past-events-header">
+
+                <h2>
+
+                    Past Events
+
+                </h2>
+
+                <p>
+
+                    Previous activities conducted by MechaVerse
+
+                </p>
+
+            </div>
+
+
+            <div class="past-events-grid">
+
+
+                <!-- EVENT 1 -->
+
+                <div class="past-event-card">
+
+
+                    <img
+                        class="past-event-image"
+                        src="assets/images/emerging trends.png"
+                        alt="Emerging Trends in Technology">
+
+
+                    <div class="past-event-content">
+
+                        <h3 class="past-event-title">
+
+                            Emerging Trends in Technology
+
+                        </h3>
+
+
+                        <p class="past-event-date">
+
+                            1 May 2023
+
+                            <br>
+
+                            Emerging trends in Technology and Role
+                            of Engineering Simulation in Industrial
+                            Engineering.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 2 -->
+
+                <div class="past-event-card">
+
+
+                    <img
+                        class="past-event-image"
+                        src="assets/images/eng simulation.jpg"
+                        alt="Exposure of Engineering Simulation">
+
+
+                    <div class="past-event-content">
+
+                        <h3 class="past-event-title">
+
+                            Exposure of Engineering Simulation
+
+                        </h3>
+
+
+                        <p class="past-event-date">
+
+                            2 May 2023
+
+                            <br>
+
+                            An Exposure of Engineering Simulation
+                            and Job Prospects in Industry.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 3 -->
+
+                <div class="past-event-card">
+
+
+                    <img
+                        class="past-event-image"
+                        src="assets/images/fem.png"
+                        alt="Introduction to FEM">
+
+
+                    <div class="past-event-content">
+
+                        <h3 class="past-event-title">
+
+                            Introduction to FEM
+
+                        </h3>
+
+
+                        <p class="past-event-date">
+
+                            8 May 2023
+
+                            <br>
+
+                            An Introduction to FEM using
+                            Ansys Mechanical.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EVENT 4 -->
+
+                <div class="past-event-card">
+
+
+                    <img
+                        class="past-event-image"
+                        src="assets/images/cfd.jpeg"
+                        alt="Introduction to Computational Fluid Dynamics">
+
+
+                    <div class="past-event-content">
+
+                        <h3 class="past-event-title">
+
+                            Introduction to Computational
+                            Fluid Dynamics
+
+                        </h3>
+
+
+                        <p class="past-event-date">
+
+                            9 May 2023
+
+                            <br>
+
+                            An Introduction to Computational
+                            Fluid Dynamics.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXISTING PHOTO CAROUSEL
+         ===================================================== -->
+
+    <section class="photo-carousel-section">
+
+
+        <div class="container">
+
+
+            <h2 class="photo-carousel-title">
+
+                MechaVerse Highlights
+
+            </h2>
+
+
+            <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-interval="3000"
+                data-ride="carousel">
+
+
+                <!-- INDICATORS -->
+
+                <ol class="carousel-indicators">
+
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="0"
+                        class="active">
+                    </li>
+
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="1">
+                    </li>
+
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="2">
+                    </li>
+
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="3">
+                    </li>
+
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="4">
+                    </li>
+
+                </ol>
+
+
+
+                <!-- CAROUSEL -->
+
+                <div class="carousel-inner">
+
+
+                    <div class="carousel-item active">
+
+                        <img
+                            class="d-block w-100 carousel-image"
+                            src="assets/images/hod lamp.jpeg"
+                            alt="MechaVerse activity">
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img
+                            class="d-block w-100 carousel-image"
+                            src="assets/images/team pic.jpg"
+                            alt="MechaVerse team">
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img
+                            class="d-block w-100 carousel-image"
+                            src="assets/images/VKM sir.jpeg"
+                            alt="MechaVerse activity">
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img
+                            class="d-block w-100 carousel-image"
+                            src="assets/images/presentation.jpeg"
+                            alt="MechaVerse presentation">
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img
+                            class="d-block w-100 carousel-image"
+                            src="assets/images/student sitting.jpeg"
+                            alt="MechaVerse students">
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PREVIOUS -->
+
+                <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="prev">
+
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="sr-only">
+
+                        Previous
+
+                    </span>
+
+                </a>
+
+
+
+                <!-- NEXT -->
+
+                <a
+                    class="carousel-control-next"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="next">
+
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="sr-only">
+
+                        Next
+
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <section
+        data-bs-version="5.1"
+        class="footer3 cid-tCWzxvGlwb"
+        once="footers"
+        id="footer3-g">
+
+
+        <div class="container">
+
+
+            <div
+                class="media-container-row align-center mbr-white">
 
 
                 <div class="row row-copirayt">
 
-                    <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    <p
+                        class="mbr-text mb-0 mbr-fonts-style
+                        mbr-white align-center display-7">
 
                         © Copyright 2026 MechaVerse.
                         All Rights Reserved.
@@ -1001,23 +1511,33 @@
 
 
 
-    <!-- =========================================================
+    <!-- =====================================================
          JAVASCRIPT
-         ========================================================= -->
+         ===================================================== -->
 
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="assets/bootstrap/js/bootstrap.bundle.min.js">
+    </script>
 
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
 
-    <script src="assets/ytplayer/index.js"></script>
+    <script
+        src="assets/parallax/jarallax.js">
+    </script>
 
-    <script src="assets/mbr-tabs/mbr-tabs.js"></script>
 
-    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script
+        src="assets/smoothscroll/smooth-scroll.js">
+    </script>
 
-    <!--
-    <script src="assets/theme/js/script.js"></script>
-    -->
+
+    <script
+        src="assets/ytplayer/index.js">
+    </script>
+
+
+    <script
+        src="assets/dropdown/js/navbar-dropdown.js">
+    </script>
 
 
 </body>
